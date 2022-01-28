@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM - 브라우저 오브젝트 모델</title>
+        <script>
+            //resizeTo(x,y) - 창크기를 절대적 크기로 변경
+            //resizeBy(x,y) - 창크기를 상대적 크기로 변경
+            
+            //새창이 3초뒤에 700,700바뀌게 처리
+            
+            var w01 = window.open('','','width=300,height=300');
+            
+            setTimeout(function(){
+                w01.resizeTo(700,700);
+            },3000);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

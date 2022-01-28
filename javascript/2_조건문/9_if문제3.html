@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>조건문</title>
+        <script>
+            var kor = prompt('국어점수입력','0~100사이정수입력');
+            var eng = prompt('영어점수입력','0~100사이정수입력');
+            var math = prompt('수학점수입력','0~100사이정수입력');
+            //prompt결과 : 문자열
+            // + 연산자 : 문자열을 더하면 연결연산자로 처리
+            // 80+80+80 => 808080
+            //Number('문자열') => 숫자데이터유형으로 변경
+            
+            var avg = (Number(kor) + Number(eng) + Number(math))/3;
+            
+            if(avg >= 90){
+                alert('수');
+            }else if(avg >= 80){
+                alert('우');
+            }else if(avg >= 70){
+                alert('미');
+            }else if(avg >= 60){
+                alert('양');
+            }else if(avg >= 0 && avg <= 59){
+                alert('가');
+            }else{
+                alert('다시입력하세요');
+            }
+        </script>
+    </head>
+    <body>
+        사용자에게 국어, 영어, 수학점수를 받아 평균을 구해 평균이 90점이상이면 [수], 80점이상이면 [우], 70점이상이면 [미], 60점이상이면 [양], 0~59점사이면 [가], 나머지 경우는 [다시입력하세요]
+    </body>
+</html>
+
+
+
+
+
+
+
+

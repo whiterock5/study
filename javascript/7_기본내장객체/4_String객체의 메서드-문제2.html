@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            //주민번호 앞자리를 입력받아 생년월일로 표시하는 프로그램
+            //901212 => 경고창 : 90년 12월 12일
+            var b = prompt('주민번호 앞자리를 입력하세요','6자리입력');
+            
+            var y = b.substr(0,2);
+            var m = b.substr(2,2);
+            var d = b.substr(4,2);
+            
+            alert(y + '년 ' + m + '월 ' + d + '일');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

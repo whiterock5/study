@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>변수복습</title>
+        <script>
+            function square(x){
+                return x * x;
+            }
+            
+            var num = prompt('제곱값을 구한 숫자입력','정수입력');
+            
+            alert(square(num));
+        </script>
+    </head>
+    <body>
+        * 함수 : 코드의 집합
+        1. 선언적함수 : 함수를 선언하는 부분과 호출하는 부분을 나눠서처리, 이름존재
+            1) 선언부분 : function 함수명(){ //코드의 집합 }
+            2) 호출부분 : 함수명()
+        2. 내장함수 : 자바스크립트가 미리 다 선언을 해서 호출해서 사용하는 함수
+            1) alert() : 경고창을 띄우는 함수
+            2) prompt() : 사용자가 값을 입력하는 창을 띄우는 함수
+            3) confirm() : 경고창에 확인,취소버튼이 있어서 확인버튼을 누르면 true값을, 취소버튼을 누르면 false값을 주는 함수
+            4) eval() : 문자열을 코드로 바로 바꿔주는 함수
+            5) isNaN() : 수식의 결과가 NaN이면 true를, 숫자면 false주는 함수
+            6) setTimeout() : 시간뒤 코드를 한번만 실행하는 함수
+            7) setInterval() : 시간마다 코드를 실행하는 함수
+            8) clearTimeout() : setTimeout()함수를 정지
+            9) clearInterval() : setInterval()함수를 정지
+            10) parseInt() : 문자열 중 숫자만 정수로 반환하는 함수
+            11) parseFloat() : 문장려 중 숫자만 유리수로 반환하는 함수
+        3. 콜백함수 : 매개변수에 데이터유형을 함수로 작성하는 함수
+                     명령이 많을까봐 코드의 집합으로 묶음
+                     ex) setInterval(function(){},시간);    
+    </body>
+</html>
+
+
+
+
+
+

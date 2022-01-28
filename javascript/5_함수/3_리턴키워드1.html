@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            //return : 값을 반환하라는 키워드
+            //1. return 수식 : 함수 선언에서 매개변수에 수식이들어가서 값이 변경된 것을 반환 해야할 때 수식 앞에 작성
+            //2. return : 함수가 선언되는 도중에 호출한 곳으로 돌아가라는 의미, return뒤의 코드는 실행되지 않음
+            
+            //x축과 y축을 곱해서 면적을 구하는 공식
+            function rect(x,y){
+                return x * y;
+            }
+            
+            rect(10,5);
+            
+            function test(){
+                alert('경고창1');
+                return;
+                alert('경고창2');
+            }
+            
+            test();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>복습</title>
+        <script>
+            //객체 : 자바스크립트가 명령가능한 모든 대상
+            
+            //내장객체 : 자바스크립트가 선언을 해놔서 호출만해서 사용
+            //1. 기본내장객체 : 컴퓨터에 기본적으로 내장되어 있는 객체
+            //2. BOM : 브라우저 관련 객체
+            //3. DOM : 문서객체모델 - body내부 요소
+            
+            //기본내장객체 - 속성과 메서드를 내장
+            //1. String : 문자열 객체
+            var test01 = '안녕하세요';
+            
+            //속성: length - 문자열의 개수
+            document.write('test01의 글자수 : ' + test01.length + '<br>');
+            
+            //메서드: charAt(인덱스번호) : 인덱스번호에 해당하는 글자 한개만 반환
+            document.write('test01의 앞한글자 : ' + test01.charAt(0) + '<br>');
+            
+            
+            
+            //2. Number : 숫자 
+            var test02 = 82.12345;
+            
+            //속성 : NaN - 수식의 결과가 숫자가 아닌 경우의 속성
+            document.write(test02 * '안녕' + '<br>');
+            
+            //메서드 : toFixed(자릿수) - 지정한 소수자릿수까지만 표현
+            document.write(test02.toFixed(2) + '<br>');
+            
+            
+            
+            //3. Array : 배열
+            var test03 = ['포도','사과','오렌지'];
+            
+            //속성 : length - 배열값의 개수
+            document.write('과일 개수 : ' + test03.length + '<br>');
+            
+            //메서드 : sort() - 배열값들을 오름차순으로 정렬
+            document.write(test03.sort() + '<br>');
+            
+            
+            //4. Math : 수학 - 새롭게 생성하지 않음
+            
+            //속성 : PI - 원주율 값 제공
+            document.write('원주율 : ' + Math.PI + '<br>');
+            
+            //메서드 : random() - 0~1사이의 랜덤한 소수자리를 반환
+            document.write('랜덤 숫자 : ' + Math.random() + '<br>');
+            
+            
+            //5. Date : 서버의 날짜와 시간
+            //오늘날짜 선언
+            var today = new Date();
+            
+            document.write('오늘날짜 : ' + today + '<br>');
+            
+            //메서드 : getOO() - 게터 - 날짜의 일부 값을 얻어오는 메서드
+            //      : setOO() - 세터 - 날짜의 일부 값을 변경하는 메서드
+            //getFullYear() - 날짜에서 년도를 4자리 반환
+            //getMonth() - 날짜에서 월을 반환, 0~11사이 숫자 반환
+            //getDate() - 날짜 중 일을 반환
+            
+            document.write('올해 : ' + today.getFullYear());
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

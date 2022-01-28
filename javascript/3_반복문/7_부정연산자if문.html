@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>조건문</title>
+        <script>
+            //NaN(not a number) : 수식결과가 숫자가 아닌 경우 나타내는 키워드
+            //isNaN(수식) : 수식이 NaN인 경우는 true를, 숫자로 잘 나오면 false
+            
+            //환율 계산기를 만들고 사용자입력창에 숫자아닌 것을 입력하면 결과가 나오지 않고 숫자인 것을 입력하면 [xxx원입니다]라는 경고창
+            
+            var dollar = 1175;
+            var num = prompt('환전하실 달러를 입력','정수입력');
+            
+            if(!isNaN(dollar * num)){ //false인 표현식만 표현
+                alert((dollar * num) + '원입니다');
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

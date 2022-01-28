@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체모델</title>
+        <script>
+            window.onload = function(){
+                //문서객체의 이벤트속성 : 명령이 발생될 시점
+                //객체명.이벤트타입 = function(){ }
+                //h1.onclick = function(){ }
+                
+                var h = document.getElementById('header');
+                
+                
+                //고전이벤트방식 : 예전부터 쓰던 방식
+                h.onclick = function(){
+                    this.style.color = 'red';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="header">제목태그</h1>
+    </body>
+</html>
+
+

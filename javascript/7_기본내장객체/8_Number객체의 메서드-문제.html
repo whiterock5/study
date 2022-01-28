@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            //사용자에게 국어, 수학, 영어점수를 입력받아 평균을 구한뒤 소수 둘째자리까지만 표시하는 프로그램
+            //xx.xx점
+            
+            var kor = prompt('국어점수입력','0~100');
+            var math = prompt('수학점수입력','0~100');
+            var eng = prompt('영어점수입력','0~100');
+            
+            var avg = (Number(kor)+Number(math)+Number(eng))/3;
+            
+            alert(avg.toFixed(2) + '점');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

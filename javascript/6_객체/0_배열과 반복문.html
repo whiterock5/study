@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>변수복습</title>
+        <script>
+            //배열 : 값을 나열해서 담는 것
+            //var 배열명 = [값1, 값2, 값3];
+            
+            //for in문 : 배열나 객체가 갖은 인덱스번호만큼만 반복하는 구문
+            //for(var i in 배열명){ //반복할 코드 }
+            
+            //week라는 변수에 일~토요일까지 담에서 리스트태그에 값을 반환
+            
+            var week = ['일','월','화','수','목','금','토'];
+            var output = '<ul>'; //리스트들을 담을 변수
+            
+            for(var i in week){
+                output += '<li>' + week[i] + '요일</li>';
+            }
+            
+            output += '</ul>';
+            
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+

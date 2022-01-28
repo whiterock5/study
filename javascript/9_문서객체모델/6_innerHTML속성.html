@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체모델</title>
+        <script>
+            window.onload = function(){
+                //innerHTML속성 : 값에 작성 것을 문서객체 안에 작성
+                
+                var clock = document.getElementById('clock');
+                
+                //1초마다 바뀌는 시계 처리
+                setInterval(function(){
+                    var now = new Date();
+                    
+                    clock.innerHTML = now.toLocaleTimeString();
+                },1000);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="clock"></h1>
+    </body>
+</html>
+
+

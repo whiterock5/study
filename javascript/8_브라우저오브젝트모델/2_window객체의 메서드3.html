@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM - 브라우저 오브젝트 모델</title>
+        <script>
+            //moveTo(x,y) : 창의 위치를 절대적 위치로 지정
+            //moveBy(x,y) : 창의 위치를 상대적 위치로 지정
+            
+            //창이 1초마다 10px씩 이동
+            
+            var w01 = window.open('','','width=300,height=300');
+            
+            setInterval(function(){
+                w01.moveBy(10,10);
+            },1000);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

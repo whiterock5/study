@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>복습</title>
+        <script>
+            //오늘날짜를 2019년 05월 22일 수요일 - body에 작성
+            var today = new Date();
+            var y = today.getFullYear();
+            var m = today.getMonth() + 1; //1월이 0, 12월 11
+            var d = today.getDate();
+            var day = today.getDay(); //일요일 0, 토요일 6
+            var week = ['일','월','화','수','목','금','토'];
+            
+            if(m < 10){
+                m = '0' + m;
+            }
+            if(d < 10){
+                d = '0' + d;
+            }
+            
+            document.write(y + '년 ' + m + '월 ' + d + '일 ' + week[day] + '요일' );
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

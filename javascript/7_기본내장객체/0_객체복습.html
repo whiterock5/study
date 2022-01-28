@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>객체복습</title>
+        <script>
+            //객체 : 자바스크립트가 명령가능한 모든 대상
+            //속성 : 값의 유형이 함수아닌 것, 객체가 갖고 있는 고유한 특성
+            //객체명.속성명;
+            //메서드 : 값의 유형이 함수인 것, 객체에 줄 수 있는 명령
+            //객체명.메서드명(매개변수);
+            
+            //사용자 정의 객체 : 개발자가 만드는 객체
+            var cat = {
+                type: '페르시안',
+                name: '야옹이',
+                age: 1,
+                gender: '암컷',
+                cry: function(time){
+                    alert(time + ' 야옹야옹');
+                }
+            }
+            
+            document.write('고양이 이름은 ' + cat.name);
+            
+            cat.cry('배고파서');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수복습</title>
+        <script>
+            //타이머함수 : 시간을 컨트롤하는 함수
+            //1. setTimeout(콜백함수,시간) : 시간 뒤에 일어날 일을 콜백함수에 담은 코드로 한번만 실행하는 함수
+            //2. setInterval(콜백함수,시간) : 시간 마다 일어날 일을 콜백함수에 담은 코드로 계속실행하는 함수
+            //3. clearTimeout(변수명) : setTimeout을 중지시키는 함수
+            //4. clearInterval(변수명) : setInterval을 중지시키는 함수
+            
+            
+            //1초마다 [n초가 지났습니다]를 body에 작성
+            //단, 10초까지만 작성
+            var num = 1;
+            
+            var time = setInterval(function(){
+                document.write(num + '초가 지났습니다<br>');
+                
+                num++; //1씩 증가시키는 증가연산자
+            },1000);
+            
+            //10초뒤에 멈춤
+            setTimeout(function(){
+                clearInterval(time);
+            },10001);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

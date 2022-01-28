@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            //함수 : 코드의 집합
+            //1. 익명함수 : 이름이 없는 함수, 변수 혹은 이벤트 등에 담아서 사용
+            //2. 선언적함수 : 이름이 있는 함수, 함수를 선언하는 부분과 실행하는 부분으로 나뉨
+            //  1) 선언부분 : 명령을 집합화해서 선언처리(생각만 하고 있는 상태)
+            //     function 함수명(){ //코드집합 }
+            //  2) 호출부분 : 선언된 함수를 필요할 때마다 호출해서 사용
+            //     함수();
+            
+            function test(){ //선언부분 - 명령을 생각만 하고 있는 상태
+                alert('테스트');
+            }
+            
+            test(); //호출부분 - 명령을 실행
+        </script>
+    </head>
+    <body>
+        <button onclick="test()">실행</button>
+    </body>
+</html>
+
+

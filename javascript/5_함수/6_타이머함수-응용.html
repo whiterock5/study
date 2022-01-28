@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            //2초마다 n초가 지났습니다 라는 문구가 작성되는 프로그램
+            //단, 10초까지만 처리되게 처리
+            var num = 2;
+            
+            var time = setInterval(function(){
+                document.write(num + '초가 지났습니다<br>');
+                
+                num += 2; //변수에 2값을 더해서 대입
+            },2000);
+            
+            setTimeout(function(){
+                clearInterval(time);
+            },10001);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

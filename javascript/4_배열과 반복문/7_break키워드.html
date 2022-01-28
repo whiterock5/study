@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배열과 반복문</title>
+        <script>
+            //break : 반복문이나 조건문을 종료시키는 키워드
+            
+            //경고창을 계속 띄우는 반복문 - 무한루프
+            for(var i=1;true;i++){
+                alert(i + '번째 경고창');
+                
+                var q = confirm('반복하시겠습니까?');
+                //확인 누르면 true를 취소를 누르면 false값을 주는 함수
+                
+                if(!q){
+                    //거짓코드 - false일때 코드
+                    //취소버튼을 눌렀을 때
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

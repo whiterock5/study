@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>반복문 복습</title>
+        <script>
+            //1~10사이를 반복하는 구문
+            for(var i=1;i<=10;i++){
+                alert(i);
+            }
+            
+            var output = ''; //월에 관련된 태그를 담는 변수
+            
+            output += '<select>'; //변수에 값을  추가대입
+            
+            for(var i=1;i<=12;i++){
+                output += '<option>' + i + '월</option>';
+            }
+            
+            output += '</select>';
+
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        * for문 - 코드를 반복하는 구문
+        for(초기식;조건식;종결식){
+            //반복할 코드
+        }
+        1. 초기식 : 반복할 초기 값을 변수에 담음 - 보통 i에 처리
+        2. 조건식 : 초기값부터 반복할 조건을 담는 식
+        3. 종결식 : 초기값부터 마지막까지 반복할 형태
+                   ex) i++, i--, i+=2 등
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>반복문복습</title>
+        <script>
+            //사용자에게 월을 입력받아 일을 출력하는 프로그램을 만드시오.
+            //사용자에게는 1~12사이의 숫자를 받음
+            //단, 1,3,5,7,8,10,12면 31일까지 표현
+            //4,6,9,11이면 30일까지 표현
+            //2면 28일까지 표현
+            
+            var m = prompt('월을 입력하세요','1~12사이 정수입력');
+            
+            var o = ''; //일과 관련된 태그를 담을 변수
+            
+            o += '<select>';
+            
+            if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12){
+                for(var i=1;i<=31;i++){
+                    o += '<option>' + i + '일</option>';
+                }    
+            }else if(m == 4 || m == 6 || m == 9 || m == 11){
+                for(var i=1;i<=30;i++){
+                    o += '<option>' + i + '일</option>';
+                } 
+            }else if(m == 2){
+                for(var i=1;i<=28;i++){
+                    o += '<option>' + i + '일</option>';
+                }
+            }
+            
+            o += '</select>';
+            
+            document.write(o);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+
+
+

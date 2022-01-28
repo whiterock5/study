@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>조건문 복습</title>
+        <script>
+            //사용자에게 점수를 입력받아 90점이상이면 수, 80점이상이면 우, 70점이상이면 미, 60점이상이면 양 0~59점사이면 가, 나머지는 다시입력하세요라는 경고창
+            var num = prompt('점수를 입력하세요','0~100사이 정수입력');
+            
+            if(num>=90 && num <= 100){
+                alert('수');
+            }else if(num>=80 && num < 90){
+                alert('우');
+            }else if(num>=70 && num < 80){
+                alert('미');
+            }else if(num>=60 && num < 70){
+                alert('양');
+            }else if(num >=0 && num < 60){
+                alert('가');
+            }else{
+                alert('다시입력하세요');
+            }
+        </script>
+    </head>
+    <body>
+        * 기본 if문 - 조건이 참일 때만 실행
+        if(조건식){
+            //참코드
+        }
+        
+        * if else 문 - 조건이 참인 경우와 거짓인 경우를 나누어서 처리
+        if(조건식){
+            //참코드
+        }else{
+            //거짓코드
+        }
+        
+        * 다중 if문 - 결과가 3개이상이어서 조건식이 많게 처리
+        if(조건식1){
+            //조건식1이 맞을 때 코드
+        }else if(조건식2){
+            //조건식2가 맞을 때 코드
+        }else{
+            //조건식1과 2가 모두 틀리경우 코드
+        }
+    </body>
+</html>
+
+
+
+
+
+
+
+

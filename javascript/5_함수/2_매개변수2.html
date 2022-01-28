@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            //매개변수 : 함수를 호출하는 쪽과 함수를 선언한 쪽을 연결하는 매개가 되는 변수
+            //문법 : function 함수명(매개변수){ }
+            //매개변수 앞에는 var를 사용하지 않고 바로 변수로 사용
+            
+            //커피를 주문하는 프로그램
+            function coffee(menu){
+                alert(menu + '를 주문하셨습니다');
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="아메리카노" onclick="coffee(this.value)">
+        <input type="button" value="카페라떼" onclick="coffee(this.value)">
+        <input type="button" value="바닐라라떼" onclick="coffee(this.value)">
+        <input type="button" value="카라멜마끼아또" onclick="coffee(this.value)">
+    </body>
+</html>
+
+
+
+
+
+
+

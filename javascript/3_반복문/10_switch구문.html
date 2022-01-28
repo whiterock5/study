@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>조건문</title>
+        <script>
+            //switch - 값의 경우 따라서 코드를 다르게 처리하는 구문
+            //5점입력 - 매우우수
+            //4점입력 - 우수
+            //3점입력 - 보통
+            //2점입력 - 미흡
+            //1점입력 - 매우미흠
+            
+            var num = prompt('점수를 입력하세요','1~5점배당');
+            
+            switch(num){
+                case '5':
+                    alert('매우우수');
+                    break;
+                case '4':
+                    alert('우수');
+                    break;
+                case '3':
+                    alert('보통');
+                    break;
+                case '2':
+                    alert('미흡');
+                    break;
+                case '1':
+                    alert('매우미흡');
+                    break;
+                default: //모든 경우가 아닌 경우 코드
+                    alert('다시입력하세요');
+                    break;
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

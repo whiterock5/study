@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배열</title>
+        <script>
+            //변수 - 데이터(값)를 한개 저장하는 공간
+            //배열 - 값을 여러개 나열해서 저장하는 공간
+            var ss = ['윤아','수영','유리','태연','서현','써니','효연','티파니'];
+            
+            alert(ss); //값을 모두 호출 : 배열명
+            alert(ss[3]+ss[7]+ss[4]); //일부 값 호출 : 배열명[인덱스번호]
+            
+            alert(ss.length);
+            
+            var output = '<h1>소녀시대</h1><ul>';
+            
+            for(var i=0;i<ss.length;i++){
+                output += '<li>' + ss[i] + '</li>';
+            }
+            
+            output += '</ul>';
+            
+            document.write(output);
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
+
+

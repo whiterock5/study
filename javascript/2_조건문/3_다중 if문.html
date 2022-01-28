@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>조건문</title>
+        <script>
+            //신입사원 입사점수가 90점이상이면 기획부, 80점이상면 총무부, 나머지는 영업부
+            
+            var num = prompt('신입사원 입사점수 입력','0~100사이 정수입력');
+            
+            if(num >= 90){
+                alert('기획부');
+            }else if(num >= 80){
+                alert('총무부');
+            }else{
+                alert('영업부');
+            }
+        </script>
+    </head>
+    <body>
+        * 조건문 : 조건식에 따라 true인 경우와 false경우를 나눠서 식을 표현하는 구문
+        1. 기본 if문 : 조건식이 true인 경우의 표현식만 표현
+        if(조건식){
+            //true인 경우 표현식
+        }
+        2. if else문 : 조건식 true이면 참표현식을 false면 거짓표현식을 반환
+        if(조건식){
+            //true인 경우 표현식
+        }else{
+            //false인 경우 표현식
+        }
+        3. if else if문(다중 if문) : 조건식에 따라 달라지는 결과가 많을 때 사용
+        if(조건식1){ 
+            //조건식1이 참일 때 표현식
+        }else if(조건식2){ 
+            //조건식2가 참일 때 표현식
+        }else{ 
+            //조건식1과 조건식2 모두와 맞지 않을 때 표현식
+        }
+    </body>
+</html>
+
+
+
+
+
+
+
+

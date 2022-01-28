@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            //주민번호 뒷자리 7자리를 입력받아 첫글자가 1혹은3이면 남자, 2혹은4면 여자, 나머지는 [다시입력하세요]라는 경고창을 띄우는 프로그램
+            var f = prompt('주민번호 뒷자리를 입력하세요','7글자입력');
+            
+            //여러 값 중 한개 맞으면 될때 - ||(논리합연산자)
+            if(f.charAt(0) == 1 || f.charAt(0) == 3){
+                alert('남자');
+            }else if(f.charAt(0) == 2 || f.charAt(0) == 4){
+                alert('여자');
+            }else{
+                alert('다시입력하세요');
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

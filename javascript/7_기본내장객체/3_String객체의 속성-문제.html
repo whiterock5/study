@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            //사용자에게 비밀번호를 입력받아 8~12글자 사이를 입력하면 [로그인성공], 그렇지않으면 [로그인실패]라는 경고창을 반환하는 프로그램
+            var pw = prompt('비밀번호 입력','8~12글자');
+            
+            //사이값 : &&(논리곱연산자)
+            if(pw.length >= 8 && pw.length <= 12){
+                alert('로그인성공');
+            }else{
+                alert('로그인실패');
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+

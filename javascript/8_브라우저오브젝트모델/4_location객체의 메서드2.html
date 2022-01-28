@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM - 브라우저 오브젝트 모델</title>
+        <script>
+            //reload() - 새로고침 메서드
+            
+            //1초가 지났습니다 - body에 작성
+            //10초뒤에 새로고침 처리
+            
+            var num = 1;
+            
+            setInterval(function(){
+                document.write(num + '초<br>');
+                
+                num++;
+            },1000);
+            
+            setTimeout(function(){
+                location.reload();
+            },10001);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+

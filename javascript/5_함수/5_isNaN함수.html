@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            //isNaN(수식) : 수식이 NaN이면  true를, 수식의 결과가 숫자면 false를 주는 함수
+            //NaN(not a number) : 숫자가 아닌 데이터 유형을 사칙연산할 시 나오는 키워드
+            
+            //환율계산기
+            var dollar = 1189;
+            var num = prompt('몇달러를 환전하시겠습니까?','정수입력');
+            
+            if(isNaN(dollar * num)){ //수식의 결과가 NaN이면
+                alert('숫자로 다시 입력하세요');
+            }else{ //수식이 숫자로 잘 처리되었다면
+                alert((dollar * num) + '원입니다');
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+

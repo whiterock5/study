@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM - 브라우저 오브젝트 모델</title>
+        <script>
+            //새창을 300X300로 띄운 후 5초후에 풀스크린이 되는 프로그램
+            var win = window.open('','','width=300,height=300');
+            
+            var w = screen.width;
+            var h = screen.height;
+            
+            setTimeout(function(){
+                win.resizeTo(w,h);
+            },5000);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
