@@ -4,7 +4,7 @@ var url = require('url');
 var qs = require('querystring');
 var template = require('./lib/template.js');
 var path = require('path')
-
+var sanitizeHtml = require('sanitize-html');
 
 var app = http.createServer(function (request, response) {
   var _url = request.url;
@@ -43,14 +43,18 @@ var app = http.createServer(function (request, response) {
         var filteredId = path.parse(queryData.id).base;
       fs.readFile(`data/${filteredId}`, 'utf-8', function (err, description) {
         var title = queryData.id;
+        // 보안책으로 입력받은값 변환
+        var sanitizedTitle = sanitizeHtml(title);
+        var sanitizeDescription = sanitizeHtml(description);
+
         var list = template.list(filelist);
         //삭제를 a태그로 안하는 이유 :: GET방식이라서
         //보안 취약 , 사용자가 건드릴수있음.
-        var html = template.HTML(title, list, `<h2>${title}</h2>${description} `, `
+        var html = template.HTML(sanitizedTitle, list, `<h2>${sanitizedTitle}</h2>${sanitizeDescription} `, `
         <a href="/create">create</a>
-        <a href="/update?id=${title}">update</a>
+        <a href="/update?id=${sanitizedTitle}">update</a>
         <form action="/delete_process" method="post" onsubmit="">
-          <input type="hidden" name="id" value="${title}">
+          <input type="hidden" name="id" value="${sanitizedTitle}">
           <input type="submit" value="delete">
         </form>
         `);
