@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //eq(i) - 선택된 문서객체 중 배열번호가 i번째인 요소만 선택
+                
+                $('h1').eq(3).css('color','red');
+                
+                $('h1:eq(3)').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>

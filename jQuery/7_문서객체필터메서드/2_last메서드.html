@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //last() - 선택된 문서객체 중 마지막 요소만 선택
+                
+                $('h1').last().css('color','red');
+                
+                $('h1:last').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>

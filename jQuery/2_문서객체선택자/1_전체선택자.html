@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 문서객체선택자</title>
+        <script>
+            //자바스크립트
+        </script>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            //준비구문 - 문서객체를 준비시키고 난 후에 스크립트 언어를 실행하라는 구문
+            //스크립트 태그와 body태그보다 위쪽에 써있어서 문서객체를 못읽는 것을 읽게 하려는 구문
+            $(document).ready(function(){
+                //객체선택
+                //BOM객체 - $(객체명)    //ex) $(window)
+                //DOM객체 - $('선택자')  //ex) $('h1')
+                //css() - 문서객체의 스타일을 컨트롤하는 메서드
+                $('*').css('color','red');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <p>문단태그</p>
+        <p>문단태그</p>
+        <ul>
+            <li>리스트태그</li>
+            <li>리스트태그</li>
+            <li>리스트태그</li>
+            <li>리스트태그</li>
+        </ul>
+    </body>
+</html>
+
+
+
+

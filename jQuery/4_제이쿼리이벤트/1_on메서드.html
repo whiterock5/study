@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 이벤트</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){ //준비구문 - 축약
+                //on() - 이벤트를 연결하는 메서드
+                /*
+                    $('선택자').on('이벤트타입',function(){
+                        //이벤트타입이 일어날때 발생하는 코드의 집합
+                    });
+                */
+                
+                //h1을 클릭하면 글자색을 빨간색으로 변경
+                $('h1').click(function(){
+                    //this - 이벤트를 받는 대상
+                    $(this).css('color','red');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+

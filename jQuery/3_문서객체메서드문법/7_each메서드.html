@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 메서드문법</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //each() - 문서객체의 배열번호별로 명령을 따로주는 메서드
+                /*
+                    $('선택자').each(function(index){
+                    
+                    });
+                */
+                
+                var c = ['red','green','blue'];
+                
+                $('h1').each(function(index){
+                    $(this).css('color',c[index]);
+                    
+                    //$(this) - 문서객체 내부에서 자신을 호출할 때 쓰는 키워드
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

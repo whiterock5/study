@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 이벤트</title>
+        <style>
+            .on{
+                color: yellow; background-color: black;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){ //ready() - 이벤트메서드
+                //hover() - 마우스엔터와 마우스리브를 번갈아 실행하는 메서드
+                //hover(function(){},function(){});
+                
+                $('h1').hover(function(){
+                    //마우스엔터시 일어날 코드
+                    $(this).addClass('on');
+                },function(){
+                    //마우스리브시 일어날 코드
+                    $(this).removeClass('on');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 문서객체선택자</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //CSS에서도 사용하는 구조선택자
+                //:nth-child(1)
+                $('h1:nth-child(1)').css('color','red');
+                $('h1:nth-child(2)').css('color','orange');
+                $('h1:nth-child(3)').css('color','yellow');
+                $('h1:nth-child(4)').css('color','green');
+                $('h1:nth-child(5)').css('color','blue');
+                $('h1:nth-child(6)').css('color','navy');
+                $('h1:nth-child(7)').css('color','purple');
+                
+                $('h1:first-child').css('text-decoration','underline');
+                $('h1:last-child').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+

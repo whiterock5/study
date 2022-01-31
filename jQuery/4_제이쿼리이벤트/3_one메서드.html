@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 이벤트</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){ //준비구문 - 축약
+                //one() - 문서객체에 이벤트를 한번만 연결하는 메서드
+                /*
+                    $('선택자').on('이벤트타입',function(){
+                    
+                    });
+                */
+                
+                $('h1').one('click',function(){
+                    alert('클릭');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+

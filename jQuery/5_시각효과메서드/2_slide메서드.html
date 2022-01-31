@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>시각효과메서드</title>
+        <style>
+            p{
+                width: 200px; height: 150px;
+                background-color: orange;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //slideDown() - 문서객체 나타나게 처리
+                //slideUp() - 문서객체 사라지게 처리
+                //매개변수 - 시간
+                //1. 키워드 - 'fast' 혹은 'slow'
+                //2. 숫자 - 밀리초단위로 작성
+                
+                $('.btn01').click(function(){
+                    $('p').slideDown('slow');
+                });
+                
+                $('.btn02').click(function(){
+                    $('p').slideUp('slow');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button class="btn01">보이기</button>
+        <button class="btn02">사라짐</button>
+        <p>테스트</p>
+    </body>
+</html>
+
+
+
+
+
+

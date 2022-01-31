@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 메서드문법</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //html() - 문서객체의 텍스트컨텐츠를 컨트롤하는 메서드
+                //1. 게터 - 문서객체의 텍스트컨텐츠를 얻어오는 메서드
+                //          $('선택자').html();
+                //2. 세터 - 문서객체의 텍스트컨텐츠를 변경하는 메서드
+                //  1) 세터1 - 텍스트를 변경
+                //          $('선택자').html('문자열');
+                //  2) 세터2 - 배열된 객체에게 각각 문자열 처리
+                /*
+                    $('선택자').html(function(index){
+                        //각각 처리될 코드
+                    });
+                */
+                //  3) 세터3 - 기존 텍스트를 사용해서 변경
+                /*
+                    $('선택자').html(function(index,text){
+                        //각각 처리될 코드
+                    });
+                    index - 객체의 배열번호을 의미하는 매개변수
+                    text - 객체의 기존 텍스트를 의미하는 매개변수
+                */
+                
+                
+                $('h1').html(function(index,text){
+                    return text + (index+1);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

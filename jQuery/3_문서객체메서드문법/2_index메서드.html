@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 복습</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //매개변수가 없는 메서드
+                //index() - 배열된 문서객체의 배열번호를 반환
+                //배열번호는 0부터 시작
+                
+                //메서드타입
+                //1. 게터 : 객체의 값을 얻어오는 메서드
+                //2. 세터 : 객체의 값을 변경시키는 메서드
+                
+                var i = $('h1:last').index();
+                
+                alert(i);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 문서객체선택자</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                //input(입력양식) - 타입을 선택
+                //input:타입명
+                //CSS에서는 사용불가능, 제이쿼리에만 있음
+                $('input:text').css('border','1px solid red');
+                $('input:password').css('border','1px solid blue');
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text">
+        <input type="password">
+    </body>
+</html>
+
+
+
+

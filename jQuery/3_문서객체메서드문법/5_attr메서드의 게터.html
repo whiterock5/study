@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 메서드문법</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //attr() - 문서객체의 태그속성을 컨트롤하는 메서드
+                //1. 게터 - 문서객체의 태그속성 값을 얻어오는 메서드
+                //         $('선택자').attr('속성명');
+                
+                var src = $('img').attr('src');
+                
+                alert(src);
+            });
+        </script>
+    </head>
+    <body>
+        <img src="images/Chrysanthemum.jpg" alt="">
+        <img src="images/Jellyfish.jpg" alt="">
+        <img src="images/Penguins.jpg" alt="">
+    </body>
+</html>
+
+
+
+
+
+
+
+

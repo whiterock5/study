@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 이벤트</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){ //준비구문 - 축약
+                //off('이벤트타입') - 문서객체의 이벤트를 제거하는 메서드
+                
+                $('h1').on('click',function(){
+                    alert('클릭되었습니다');
+                    
+                    $(this).off('click');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+

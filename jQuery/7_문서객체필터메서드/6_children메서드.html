@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <style>
+            *{ font-size: 30px; }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //children() - 모든 자손을 선택
+                //children('선택자') - 특정 자손만 선택
+                $('div').children().css('color','red');
+                $('div').children('h2').css('font-style','italic');
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>제목태그</h1>
+            <h2>제목태그</h2>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

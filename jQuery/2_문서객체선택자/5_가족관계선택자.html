@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 문서객체선택자</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //자손선택자
+                $('div > ul > li').css('color','orange');
+                
+                //후손선택자
+                $('div li').css('text-decoration','underline');
+                
+                //동위선택자1 - 바로뒤에 있는 동위선택자만 선택
+                $('h1 + h2').css('color','red');
+                
+                //동위선택자2 - 뒤에 있는 모든 동위선택자 선택
+                $('h1 ~ h2').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>리스트태그</li>
+                <li>리스트태그</li>
+                <li>리스트태그</li>
+            </ul>
+        </div>
+        <h1>제목태그</h1>
+        <h2>제목태그</h2>
+        <h2>제목태그</h2>
+        <h2>제목태그</h2>
+        <h2>제목태그</h2>
+        <h2>제목태그</h2>
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animate메서드</title>
+        <style>
+            div{
+                width: 50px; height: 50px;
+                background-color: orange;
+                position: relative;
+                /* left, right, top, bottom 속성 : 포지션을 줘야만 사용 가능함 */
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //animate() - 문서객체의 css변화를 시간차를 둬서 처리
+                //animate({css속성},시간)
+                $('div').animate({
+                    left: 500,
+                    top: 500
+                },'slow');
+            });
+        </script>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+
+
+

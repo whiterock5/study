@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //first() - 선택된 문서객체 중 첫번째 요소만 선택
+                //메서드체이닝 - 문서객체에 메서드를 여러개 연결하는 것
+                //             먼저 쓴 메서드 먼저 처리됨
+                //$('선택자').메서드().메서드();
+                
+                $('h1').first().css('color','red');
+                
+                $('h1:first').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>

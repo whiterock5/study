@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 문서객체선택자</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //:first - 선택된 요소 중 첫번째 있는 요소만 선택
+                //:last - 선택된 요소 중 마지막에 있는 요소만 선택
+                //:eq(i) - 선택된 요소 중 배열번호가 i번째인 요소만 선택
+                //:odd - 선택된 요소 중 배열번호가 홀수인 요소들만 선택
+                //:even - 선택된 요소 중 배열번호가 짝수인 요소들만 선택
+                //:lt(i) - 선택된 요소 중 지정된 배열번호보다 작은 번호 요소들 선택
+                //:gt(i) - 선택된 요소 중 지정된 배열번호다 큰 번호 요소들 선택
+                
+                $('h1:first').css('color','red');
+                $('h1:last').css('color','red');
+                $('h1:eq(3)').css('color','red');
+                $('h1:lt(3)').css('font-size',10);
+                $('h1:gt(3)').css('font-size',50);
+                $('h1:odd').css('text-decoration','underline');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+

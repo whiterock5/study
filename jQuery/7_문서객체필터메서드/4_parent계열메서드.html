@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            li{ list-style: none; }
+            
+            body *{ padding: 20px; border: 3px solid black; }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //parent() - 문서객체의 바로 상위 부모객체를 선택
+                //parents('선택자') - 문서객체의 조상요소 중 선택자를 선택
+                //parentsUntil('선택자') - 문서객체와 선택자로 선택한 사이의 모든 조상요소를 선택
+                
+                $('li').parent().css('background','orange');
+                $('li').parents('.wrap2').css('background','lightblue');
+                $('li').parentsUntil('.wrap1').css('border-color','red');
+                $('li').parent().parent().css('opacity',0.5);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrap1">
+            <div class="wrap2">
+                <ul>
+                    <li>리스트태그</li>
+                    <li>리스트태그</li>
+                    <li>리스트태그</li>
+                    <li>리스트태그</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

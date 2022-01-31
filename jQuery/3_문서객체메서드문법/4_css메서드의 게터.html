@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 메서드문법</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //css() - 문서객체의 스타일을 컨트롤하는 메서드
+                //1. 게터 : 문서객체의 스타일 속성값을 가져오는 메서드
+                //         $('선택자').css('속성값');
+                
+                //h1의 글자크기를 반환
+                var size = $('h1').css('fontSize');
+                
+                alert(size);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

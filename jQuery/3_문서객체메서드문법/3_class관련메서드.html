@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 복습</title>
+        <style>
+            .on{
+                color: yellow; background-color: black;
+                font-size: 20px;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //addClass('클래스명') - 문서객체에 클래스를 추가하는 메서드
+                //removeClass('클래스명') - 문서객체에 클래스를 제거하는 메서드
+                
+                $('h1').addClass('on');
+                $('h1:last').removeClass('on');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

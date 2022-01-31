@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <style>
+            *{ font-size: 30px; }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //siblings('선택자') - 문서객체의 형제요소 중 선택자만 선택
+                //next() - 문서객체의 바로 아래 동생요소를 선택
+                //nextAll() - 문서객체의 동생요소를 모두 선택
+                //nextUntil('선택자') - 문서객체의 동생요소 중 선택자전까지 선택
+                //prev() - 문서객체의 바로 위 형요소를 선택
+                //prevAll() - 문서객체의 형요소를 모두 선택
+                //prevUntil('선택자') - 문서객체의 형요소 중 선택자전까지 선택
+                
+                $('h3').next().css('color','red');
+                $('h3').nextAll().css('text-decoration','underline');
+                $('h3').prev().css('color','red');
+                $('h3').prevAll().css('font-style','italic');
+                
+                $('h3').siblings('h6').css('color','green');
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그1</h1>
+        <h2>제목태그2</h2>
+        <h3>제목태그3</h3>
+        <h4>제목태그4</h4>
+        <h5>제목태그5</h5>
+        <h6>제목태그6</h6>
+    </body>
+</html>
+
+
+
+
+
+
+
+

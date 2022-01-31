@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>시각효과메서드</title>
+        <style>
+            div{
+                width: 300px; padding: 20px;
+                border: 5px solid black;
+                margin-bottom: 20px;
+            }
+            p{
+                width: 300px; height: 200px;
+                background-color: orange;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //toggle - 한버튼이나 한키에 두가지기능을 번갈아 실행
+                //toggle() - show와 hide를 번갈아 실행
+                //slideToggle() - slideDown과 slideUp을 번갈아 실행
+                //fadeToggle() - fadeIn과 fadeOut을 번갈아 실행
+                
+                $('.show button').click(function(){
+                    $('.show p').toggle('slow');
+                });
+                
+                $('.slide button').click(function(){
+                    $('.slide p').slideToggle('slow');
+                });
+                
+                $('.fade button').click(function(){
+                    $('.fade p').fadeToggle('slow');
+                });
+                
+                //show계열 : 좌측상단을 기준으로 투명도도 조절되면서 나타나거나 사라짐
+                //slide계열 : 상단기준으로 나타나거나 사라짐
+                //fade계열 : 투명도 처리로 나타나거나 사라짐
+            });
+        </script>
+    </head>
+    <body>
+        <div class="show">
+            <button>보임/안보임</button>
+            <p>테스트</p>
+        </div>
+        <div class="slide">
+            <button>보임/안보임</button>
+            <p>테스트</p>
+        </div>
+        <div class="fade">
+            <button>보임/안보임</button>
+            <p>테스트</p>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+

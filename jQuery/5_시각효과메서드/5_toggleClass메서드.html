@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>시각효과메서드</title>
+        <style>
+            .on{
+                color: yellow; background-color: black;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //addClass('클래스명') - 문서객체에 클래스를 추가
+                //removeClass('클래스명') - 문서객체에 클래스를 제거
+                //toggleClass('클래스명') - addClass와 removeClass번갈아 실행
+                
+                $('h1').click(function(){
+                    $(this).toggleClass('on');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+

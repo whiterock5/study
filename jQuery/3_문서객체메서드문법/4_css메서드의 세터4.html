@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 메서드문법</title>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //css() - 문서객체의 스타일을 컨트롤하는 메서드
+                //1. 게터 : 문서객체의 스타일 속성값을 가져오는 메서드
+                //         $('선택자').css('속성명');
+                //2. 세터 : 문서객체의 스타일 속성값을 바꾸는 메서드
+                //  1) 세터1 : 속성명을 한개만 바꾸는 메서드
+                //            $('선택자').css('속성명',값);
+                //  2) 세터2 : 속성명을 여러개 바꿔서 표집화시킴
+                /*
+                    $('선택자').css({
+                        속성명: 값,
+                        속성명: 값
+                    });
+                */
+                //  3) 세터3 : 문서객체가 배열되어 있을 때 css를 각각 처리
+                /*
+                    $('선택자').css('속성명',function(index){
+                        //각각 처리할 css값작성
+                    });
+                */
+                
+
+                //배경색은 검정색, 글자색을 레드,그린,블루
+                var c = ['red','green','blue'];
+                
+                $('h1').css({
+                    backgroundColor: 'black',
+                    color: function(index){
+                        return c[index];
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+

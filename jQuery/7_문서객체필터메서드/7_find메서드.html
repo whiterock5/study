@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문서객체필터메서드</title>
+        <style>
+            div{
+                width: 300px; padding: 10px;
+                border: 3px solid black;
+                margin-bottom: 20px;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(function(){
+                //find() - 문서객체로부터 요소를 찾을 때 사용
+                //매개변수 
+                //find('> 선택자') - 문서객체의 자손 요소 선택
+                //find('선택자') - 문서객체의 후손 요소 선택
+                //find('+ 선택자') - 문서객체의 바로 뒤에 있는 동위요소만 선택
+                //find('~ 선택자') - 문서객체의 뒤에 있는 모든 동위요소만 선택
+                
+                $('div').click(function(){
+                    $(this).find('h1').css('color','red');
+                    $(this).find('p').css('color','blue');
+                });
+            }); 
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>제목태그</h1>
+            <p>문단태그</p>
+        </div>
+        <div>
+            <h1>제목태그</h1>
+            <p>문단태그</p>
+        </div>
+        <div>
+            <h1>제목태그</h1>
+            <p>문단태그</p>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

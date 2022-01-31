@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 이벤트</title>
+        <style>
+            .on{
+                text-decoration: underline;
+            }
+        </style>
+        <script src="jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){ 
+                //마우스를 올리면 밑줄이 뜨고, 마우스를 내리면 밑줄이 안뜨게 처리
+                $('h1').hover(function(){
+                    $(this).addClass('on');
+                },function(){
+                    $(this).removeClass('on');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
+    </body>
+</html>
+
+
