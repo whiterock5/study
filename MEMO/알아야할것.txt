@@ -1,0 +1,36 @@
+알아야할사이트
+
+https://mvnrepository.com/
+
+https://stackoverflow.com/
+
+https://www.javadoc.io/doc/org.springframework/spring-core/4.1.6.RELEASE/index.html
+
+ORM
+
+O 오브젝트 -> DTO      ┐   맵핑
+R 릴레이션 -> 테이블    ┘
+M 맵핑 
+
+== 오브젝트 테이블 맵핑
+-> ORM은 오브젝트와 컬럼을 직접 접근한다
+
+
+마이바티스 -> 오라클 mySQL msSQL
+하이비네트
+
+3.5이하는 ibatis를 사용한다
+
+@Repository 
+직접접근 지원 , 활성화
+
+
+스트링 -> 오브젝트 
+DTO 타입과 데이터베이스 테이블 타입이 다를수있음.
+ex) java Date와 오라클 날짜 
+
+스프링 MVC 에서는 handler Mapper가 자동변환해준다.
+
+ORM은 MVC패턴에서 적용하기 쉽다
+
+spring 2 70페이지근처는 다알아야함

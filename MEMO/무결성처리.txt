@@ -1,0 +1,9 @@
+무결성 처리
+public void deptInsert(DeptDTO deptDTO) {
+try {
+deptDAO.insert(deptDTO); 
+// 데이터의 무결성 제약조건(Column unique) 제약조건에 대한 예외를 처리한다.
+} catch(DataIntegrityViolationException e) { 
+e.printStackTrace( );
+}
+}

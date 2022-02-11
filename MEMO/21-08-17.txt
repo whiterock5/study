@@ -1,0 +1,17 @@
+함수, 메소드 => 동적 객체 => 동사
+
+생성자
+A a = new A( );
+객체지향에서만 사용
+
+//Scanner 생성자를 new 연산자로 실행한다. 인자혹은 인수
+Scanner scanner = new Scanner(System.in);
+
+if else로 안되면 단순 중첩 if 문으로 해본다.
+
+외부자료형일경우 void 일경우에 외부에서 출력 불가능
+변수형(int등)을 정해준다면
+외부에서 출력가능.
+void는 반환하는 값이없다.
+
+switch문에 if문 쓰는거아님.

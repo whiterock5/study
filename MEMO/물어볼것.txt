@@ -1,0 +1,42 @@
+10번은 삭제가안됨. 
+
+- 모델?
+-> 담는이유 
+
+- 트랜잭션을 왜쓰냐? 
+
+- EnableAspectAutoProxy ? 
+
+- AOP?
+
+- 트랜잭션 , 트랜잭션 처리 
+
+* 입력 삭제 수정 할 때만, 트랜잭션 필요한것.
+트랜잭션 : 데이터베이스의 처리할수 있는 최소 단위.
+	 최소의 이벤트가 있을때 입력,삭제,수정등.
+
+Model이 내장해서 인스턴스
+deptDTO deptDto = new DeptDTO();
+deptDAO deptDao = new DeptDAO();
+
+deptDto.set
+
+@Modelattribure
+무조건 DispatherServlet
+속성을만들지못함
+model.addAttribute("list",deptService.deptSelect) 같이 속성못만듬
+
+
+
+
+FrameworkServlet extends HttpServletBean 
+
+만들어져있는것에 값을 인지.
+
+Controller -> 폼에서 값을 받아와서 핸들러가 타입을 바꿔줌.
+
+
+@EnableAspectJAutoProxy(proxyTargetClass= true) 역할
+보안을위해서 넣어준다.
+마이바티스는 자동으로 트랜잭션 처리를 한다.
+트랜잭션 처리를 자동으로 못하면 Proxy가 가로채서 처리해준다.

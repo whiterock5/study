@@ -1,0 +1,54 @@
+m 자바빈즈
+v  jsp
+c 서블릿
+
+<form action =" ">
+-> 리퀘스트 객체가 파라미터를 담아서 전송시켜주는 문서 또는 파일의 위치가 된다.
+
+스레드 : 우선순위
+
+웹에서 사용되는 String 클래스의 경우 초기화값은 null로 하면안된다.
+
+겟메소드에서만 요청라인의 인코딩은 반드시 서버에서 세팅해야한다
+
+스프링 프레임워크에서 파라미터 관련 코드를 생략할수있다.
+ name 값과 컬럼명일치 -> 스프링으로 개발하지 않으면 일치시키는 것이 의미가없다
+
+톰캣 7.0 이하는
+반드시 web.xml에 설정을 해줘야함.
+8.0 => 생략할수 있도록 했다.
+
+xml은 특별한 태그가 존재하지않는다
+자바의 클래스를 상속해서 사용할 수 있다
+
+xml 스키마는 자바를 상속받은 xml이다.
+
+http://디렉터리명/
+
+
+DTD 자바와 관련된 자바를 상속받은 xml
+=> DAO 클래스
+
+
+  <servlet>
+  <servlet-name>Se</servlet-name>
+  <servlet-class>min.servlet.begin.ServletCall</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Se</servlet-name>
+  <url-pattern>/ServletCall</url-pattern>
+
+  <!--  / 는 구분자. 절대경로가아님 -->
+
+web.xml의 url 패턴과 servletCall의 webServlet의 이름이같으면 중복에러남.
+
+어노테이션 () 안의 매개변수 = 자바스크립트의 매개변수 == 함수
+
+어노테이션 - 메소드가 매개변수로 사용할수 있다.
+
+어노테이션은 void 반환값을 사용하지 않는 인터페이스다
+
+클래스밖의 어노테이션 = 스캔 어노테이션 => 구문, 멤버변수 , 패턴등을 사용할수있다
+스캔어노테이션을 사용하면 구문,맴버변수,패턴, 메소드등을 생략가능..

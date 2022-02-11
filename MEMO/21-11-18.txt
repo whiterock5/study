@@ -1,0 +1,22 @@
+로케일 => 애플리케이션의 인코딩환경 -> 문자 날짜 시간
+
+인코딩 --> 바이트로 변환
+
+jndi  // context.xml 적을필요없고 커넥션풀이 내장되어있다.
+<sql:setDataSource var="conn" driver="oracle.jdbc.driver.OracleDriver"
+url="jdbc:oracle:thin:@localhost:1521:xe" user="scott" password="tiger"/>
+
+mvc + 프론트 패턴
+설명을위한용어 = mvc2 = 모델2 
+
+호텔입구..
+
+프론트 -> 서블릿 doGet doPost 만
+= 컨트롤러
+
+나머지 CRUD requset (( 포워드인지 리다이텍트인지 ))
+= 서비스 (웹과연동)
+
+실제적인 mvc 패턴이고 비지니스로직을 담당
+
+연속성 객체다

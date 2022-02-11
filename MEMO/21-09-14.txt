@@ -1,0 +1,8 @@
+테이블 뒤에는 별칭을 사용할때 as 를사용하면안된다.
+
+페이징처리
+
+rownum 은  자바변수명으로 쓸수없어서 별칭 써준다.
+
+select * from( select rownum num from emp order by empno)
+where num <=10;
