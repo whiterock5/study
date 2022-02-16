@@ -11,23 +11,27 @@
       <div class="white-bg">
         <h4>상세페이지</h4>
         <p>상세페이지 내용</p>
-        <button v-if="modalCheck == false">닫기</button>
+        <button @click="modalCheck = false">닫기</button>
       </div>
     </div>
-
+    <!--
+      HTML태그안의 속성 데이터바인딩은 ":"붙이기
+      HTML 태그안의 내용 데이터바인딩은 {{ }}
+    -->
     <div v-for="(product,i) in products" :key="product">
-      <!--이미지-->
-      <img src="./assets/room[i].jpg" class="room-img">
-      <h4 @click="modalCheck = true">{{products[i]}}</h4>
-      <p>50만원</p>
-      <!--함수이름만 쓴다.-->
-      <button @click="increase(i)">매물 신고</button> <span>신고수 : {{num[i]}} </span>
+      <img :src="oneroom[i].image" class="room-img">
+      <h4 @click="modalCheck = true">{{oneroom[i].title}}</h4>
+      <p>{{oneroom[i].price}}원</p>
+  
     </div> 
     
   </div>
 </template>
 
 <script>
+//import 작명 from 주소
+import data from './assets/data.js';
+
 //동적 UI
 //1. UI의 현재상태를 데이터로 저장
 //2. 데이터에 따라 UI가 어떻게 보일지 작성
@@ -36,6 +40,7 @@ export default {
   // 데이터 보관함
   data(){
     return {
+      oneroom: data,
       modalCheck : false,
       num : [0,0,0],
       menu : ['Home', 'Shop' , 'About'],
